@@ -1,9 +1,6 @@
 # Person ReID
 
 Re-Identification for person in tensorflow
-## Usage
-For academic research purposes only. Please cite this GitHub repository.
-
 
 ## Dependencies
 ```
@@ -14,6 +11,9 @@ PIL 5.0.0
 IPython 6.2.1
 jupyter 1.0.0
 ```
+## Model
+
+Right now the model being used is a Siamese network, but one can change the model which is being imported in test_siamese_network_jupyter_images.ipynb to any pre-trained model. To train a model, you need to change the model function of train_helper.py file.
 
 ## Dataset
 
