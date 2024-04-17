@@ -1,6 +1,6 @@
-# siamese_person_re_id
-Siamese Network for Person Re-Identification in TensorFlow
+# Person ReID
 
+Re-Identification for person in tensorflow
 ## Usage
 For academic research purposes only. Please cite this GitHub repository.
 
@@ -37,7 +37,7 @@ Next put the data into a directory with the following structure:
       ....jpg
     ...
 ```  
-You can creade a TFRecord file for TensorFlow consumption. This will create a training and validation set for your dataset:
+You can create a TFRecord file for TensorFlow consumption. This will create a training and validation set for your dataset:
 ```
 $ python3 create_tf_record.py --tfrecord_filename=mars --dataset_dir=/path/to/dataset/
 ```
@@ -56,7 +56,7 @@ To test the model you can run the test script with two test images as such:
 $ python3 test_siamese_network.py --img1 /path/to/image1/ --img2 /path/to/image2
 ```
 
-Alternatively you can use the two provided IPython notebooks to test the network.
+Alternatively, you can use the two provided IPython notebooks to test the network.
 The following notebook runs the test on 20 random validation set image pairs and displays the results.
 ```
 $ jupyter notebook test_siamese_network_jupyter_validation.ipynb
